@@ -13,14 +13,22 @@ InitRandomGenerator( "Problem 1.1 & 1.2" )
 ####################################################################
 
 Gases_lst = (
-    ('Acetylene', 1.09, 8.3E-6),        ('Air', 1.2, 15.0E-6),
-    ('Ammonia', 0.74, 13.6E-6),         ('Argon', 1.66, 13.5E-6),
-    ('Carbon dioxide', 1.83, 8.09E-6),  ('Carbon monoxide', 1.16, 15.7E-6),
-    ('Chlorine', 2.95, 3.49E-6),        ('Ethane', 1.25, 6.8E-6),
-    ('Ethylene', 1.17, 8.3E-6),         ('Helium', 0.166, 118.7E-6),
-    ('Hydrogen', 0.0838, 108.0E-6),     ('Methane', 0.667, 20.1E-6),
-    ('Nitrogen', 1.16, 15.2E-6),        ('Nitrogen oxide (NO)', 1.23, 15.4E-6),
-    ('Oxygen', 1.36, 14.7E-6),          ('Sulfur dioxide', 2.66, 5.2E-6),
+    ('Acetylene', 1.09, 8.3E-6),        
+    ('Air', 1.2, 15.0E-6),
+    ('Ammonia', 0.74, 13.6E-6),         
+    ('Argon', 1.66, 13.5E-6),
+    ('Carbon dioxide', 1.83, 8.09E-6),  
+    ('Carbon monoxide', 1.16, 15.7E-6),
+    ('Chlorine', 2.95, 3.49E-6),        
+    ('Ethane', 1.25, 6.8E-6),
+    ('Ethylene', 1.17, 8.3E-6),         
+    ('Helium', 0.166, 118.7E-6),
+    ('Hydrogen', 0.0838, 108.0E-6),     
+    ('Methane', 0.667, 20.1E-6),
+    ('Nitrogen', 1.16, 15.2E-6),        
+    ('Nitrogen oxide (NO)', 1.23, 15.4E-6),
+    ('Oxygen', 1.36, 14.7E-6),          
+    ('Sulfur dioxide', 2.66, 5.2E-6),
     ('Water vapor', 0.749, 13.6E-6)
 )
 

@@ -1,0 +1,31 @@
+<problem>
+
+<script type="loncapa/python">
+<![CDATA[ 
+from math import *
+valor = 89
+
+def give_partial_credit( expected, ans ):
+  ans = float(ans)
+  if fabs( ans - valor ) > 0.001:
+    correct = False
+    grade = 0
+    msg = 'Your grade is 0%. The correct value is ' + str(valor)
+  else:
+    correct = True
+    grade = 100
+    msg = 'Your grade is 100%'
+
+  return { 'input_list': [ { 'ok': correct, 'msg': msg, 'grade_decimal':grade }, ] }
+
+]]>
+</script>
+
+<p>In the following problem, the learner receives a score that equals the
+answer / 100. If the learner's answer is greater than 100 or less than 0,
+the score equals 0.</p>
+<p>Enter a number $valor .</p>
+<customresponse cfn="give_partial_credit">
+<textline points="100" size="40" label="Ans1"/><br/>
+</customresponse>
+</problem>

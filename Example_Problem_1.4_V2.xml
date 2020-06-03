@@ -1,0 +1,32 @@
+<problem>
+
+<script type="loncapa/python">
+<![CDATA[ 
+
+from math import *
+
+value = 0.50
+
+def EvaluateAnswer( expected, ans ):
+  ans = float(ans)
+  if fabs( ans - value ) <= 0.001:
+    correct = True
+    msg = 'Your grade is 100%'
+    grade = 100
+  else:
+    correct = False
+    msg = 'Your grade is 0%. The correct diameter is ' + str(value) + ' m'
+    grade = 0
+
+  return { 'input_list': [ { 'ok': correct, 'msg': msg, 'grade_decimal':grade }, ] }
+
+]]>
+</script>
+
+<legend>
+  Enter totor diameter [m]:
+</legend>
+<customresponse cfn="EvaluateAnswer">
+	<textline size="40" label="ans"/>
+</customresponse>
+</problem>
