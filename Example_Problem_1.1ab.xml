@@ -13,29 +13,25 @@ InitRandomGenerator( "Problem 1.1 & 1.2" )
 ####################################################################
 
 Gases_lst = (
-  ( 'Acetylene', 1.09, 8.3E-6),        ( 'Air', 1.2, 15.0E-6),
-  ( 'Ammonia', 0.74, 13.6E-6),         ( 'Argon', 1.66, 13.5E-6),
-  ( 'Carbon dioxide', 1.83, 8.09E-6),  ( 'Carbon monoxide', 1.16, 15.7E-6),
-  ( 'Chlorine', 2.95, 3.49E-6),        ( 'Ethane', 1.25, 6.8E-6),
-  ( 'Ethylene', 1.17, 8.3E-6),         ( 'Helium', 0.166, 118.7E-6),
-  ( 'Hydrogen', 0.0838, 108.0E-6),     ( 'Methane', 0.667, 20.1E-6),
-  ( 'Nitrogen', 1.16, 15.2E-6),        ( 'Nitrogen oxide', 1.23, 15.4E-6),
-  ( 'Oxygen', 1.36, 14.7E-6),          ( 'Sulfur dioxide', 2.66, 5.2E-6),
-  ( 'Water vapor', 0.749, 13.6E-6)
+    ('Acetylene', 1.09, 8.3E-6),        ('Air', 1.2, 15.0E-6),
+    ('Ammonia', 0.74, 13.6E-6),         ('Argon', 1.66, 13.5E-6),
+    ('Carbon dioxide', 1.83, 8.09E-6),  ('Carbon monoxide', 1.16, 15.7E-6),
+    ('Chlorine', 2.95, 3.49E-6),        ('Ethane', 1.25, 6.8E-6),
+    ('Ethylene', 1.17, 8.3E-6),         ('Helium', 0.166, 118.7E-6),
+    ('Hydrogen', 0.0838, 108.0E-6),     ('Methane', 0.667, 20.1E-6),
+    ('Nitrogen', 1.16, 15.2E-6),        ('Nitrogen oxide (NO)', 1.23, 15.4E-6),
+    ('Oxygen', 1.36, 14.7E-6),          ('Sulfur dioxide', 2.66, 5.2E-6),
+    ('Water vapor', 0.749, 13.6E-6)
 )
 
 ####################################################################
-# RANDOM DATA GENERATION
-
+# RANDOM DATA 
 GasName, GasDensity, GasKinViscosity = RandomPick( Gases_lst )
 GasKinViscosityT1E6 = GasKinViscosity * 1E6
-
 # Random flat plate length 
 L = np.round( np.random.uniform( 0.10, 0.80 ), 2 )
-
 # Random local Reynolds number under laminar flow conditions
 Re_L = 4E5 * np.round( np.random.uniform( 0.80, 1.00 ), 2 ) 
-
 # random vertical position between 30% and 90% of the boundary layer thickness
 eta = np.round( 5.0 * np.random.uniform( 0.30, 0.90 ), 4 )
 
@@ -45,8 +41,8 @@ delta = 5.0 * L / np.sqrt( Re_L )
 h_p = np.round( eta / 5.0 * delta, 4 )
 
 ####################################################################
-# Question 1.1 a)
-from scipy import interpolate
+# Questão 1.1 a)
+from scipy import interpolate # interpolation library
 # Blasius solution
 Blasius_eta = np.array( ( 0.0, 0.5,1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5 ) )
 Blasius_uUe = np.array( ( 0.0000, 0.1659, 0.3298, 0.4868, 0.6298, 0.7513, 
@@ -57,7 +53,7 @@ U_eta = float( Blasius( eta ) ) * U_e
 NumericMultipleChoice( 'a', U_eta, 3, 'm/s', 5, U_eta*0.5 )
 
 ####################################################################
-# Question 1.1 b)
+# Questão 1.1 b)
 # Cálculo da derivada usando o coeficiente de atrito
 Cf = 0.6642 / np.sqrt( Re_L )
 tau_w =  0.5 * GasDensity * U_e**2 * Cf
@@ -65,21 +61,29 @@ mu = GasKinViscosity / GasDensity
 dudy_w = tau_w / mu 
 
 NumericMultipleChoice( 'b', dudy_w, 1, '1/s', 5, dudy_w )
-
 ]]>
 </script>
 
 <p style="text-align: center;">
-  <img src="https://raw.githubusercontent.com/joaochenriques/ExonlineX/master/Problema_Teo_C1.svg" width = "700" />
+<img src="https://raw.githubusercontent.com/joaochenriques/ExonlineX/master/Problema_Teo_C1.svg" width = "700" />
 </p>
   
-<p> $GasName at 20\(^\circ\) and 1 atm flows over a flat plate in zero pressure gradient. </p>
-<p> Assume laminar flow and consider \(h_p=$h_p\,\)m, \(L=$L\,\)m and \(U_e=$U_e\,\)m/s. </p>
-<p> The relevant $GasName properties are \(\nu = $GasKinViscosityT1E6 \times 10^{-6}\,\)m\(^2\)/s and \(\rho = $GasDensity\,\)kg/m\(^3\). </p>
-<p> Use the Blasius laminar boundary layer solution compute to answer the following questions. </p>
+<p><span style="color:red">$GasName</span> at 20\(^\circ\) and 1 atm flows over a flat plate in zero pressure gradient. </p>
+
+<p> Assume laminar flow and consider <span style="color:red">\(h_p=$h_p\,\)</span>m, 
+<span style="color:red">\(L=$L\,\)</span>m and <span style="color:red" >\(U_e=$U_e\,\)</span>m/s. 
+</p>
+
+<p> The relevant $GasName properties are 
+<span style="color:red">\(\nu = $GasKinViscosityT1E6 \times 10^{-6}\,\)</span>m\(^2\)/s and 
+<span style="color:red">\(\rho = $GasDensity\,\)</span>kg/m\(^3\). 
+</p>
+
+<p> Use the Blasius laminar boundary layer solution to answer the following questions. </p>
   
 <legend> 
-<b> a) </b> Compute the velocity in point (1): 
+  <b>a)</b> Compute the velocity in point (1):
+  <p> <span style="color:blue"><b>(answers in random order per student)</b></span></p>
 </legend>
 <multiplechoiceresponse>
   <choicegroup type="MultipleChoice">
@@ -92,7 +96,8 @@ NumericMultipleChoice( 'b', dudy_w, 1, '1/s', 5, dudy_w )
 </multiplechoiceresponse>  
  
 <legend> 
-  <b> b) </b> Compute \(\partial u/\partial y\) at the wall in \(x=L\)
+  <b>b)</b> Compute \(\partial u/\partial y\) at the wall in \(x=L\)
+  <p> <span style="color:blue"><b>(answers in random order per student)</b></span></p>
 </legend>
 <multiplechoiceresponse>
   <choicegroup type="MultipleChoice">

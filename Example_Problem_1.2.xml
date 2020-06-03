@@ -1,0 +1,77 @@
+<problem>
+
+<script type="loncapa/python"> 
+<![CDATA[
+
+####################################################################
+# importa as funções auxiliares como globais (ver ficheiro do url)
+import requests
+url = 'http://web.ist.utl.pt/~ist30176/edx/edx_utils_01.py'
+exec( requests.get(url).content, globals() )
+####################################################################
+InitRandomGenerator( "Problem 1.1 & 1.2" )
+####################################################################
+
+Questions_lst = ( 
+    "The necessary condition for BL separation is:", 
+    "In a separated boundary layer velocity profile the maximum shear stress is:", # question 1
+    "The von-Karman integral momentum equation is applicable:") # question 2
+
+#-------------
+Question0_shuffle_lst = ( 
+      ( "true", "pressure increase in the streamwise direction" ),
+      ( "false", "the flow is laminar since the plate leading edge" ),
+      ( "false", "the flow needs to be turbulent" )
+  )
+
+Question0_fixed_lst = ( ( "false", "none of the above" ),
+                        ( "false", "not enough information" ) )
+ 
+#-------------
+Question1_shuffle_lst = ( 
+    ( "false", "at wall" ),
+    ( "true",  "above the wall and within the boundary layer" ),
+    ( "false", "in the external flow" ),
+    ( "false", "Upstram of the flat plate" )
+)
+
+Question1_fixed_lst = ( ( "false", "none of the above" ), )
+
+#-------------
+Question2_shuffle_lst = ( 
+      ( "false", "only in laminar flow" ),
+      ( "false", "only in turbulent flow" ),
+      ( "true",  "in laminar and turbulent flows" ),
+      ( "false", "in the potencial flow region"),
+      ( "false", "Upstram of the flat plate" )
+  )
+# this question has no fixed list 
+Question2_fixed_lst = None
+
+Questions_shuffle_lst = ( Question0_shuffle_lst, Question1_shuffle_lst, Question2_shuffle_lst )
+Questions_fixed_lst = ( Question0_fixed_lst, Question1_fixed_lst, Question2_fixed_lst )
+
+#================
+# select one of the three questions:
+num = RandomPick( ( 0, 1, 2 ) )
+
+Question = Questions_lst[num]
+StringMultipleChoice( 'b', Questions_shuffle_lst[num], Questions_fixed_lst[num] )
+]]>
+</script>
+ 
+<legend> 
+$Question
+<p><span style="color:blue"><b>(selected from a bank of 3 questions, answers in random order)</b></span></p>
+</legend>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="$b_answer_0" > $b_value_0 </choice>
+    <choice correct="$b_answer_1" > $b_value_1 </choice>
+    <choice correct="$b_answer_2" > $b_value_2 </choice>
+    <choice correct="$b_answer_3" > $b_value_3 </choice>
+    <choice correct="$b_answer_4" > $b_value_4 </choice>
+  </choicegroup>
+</multiplechoiceresponse>  
+  
+</problem>
