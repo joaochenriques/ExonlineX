@@ -30,9 +30,9 @@
      showgrid="false"
      showguides="false"
      inkscape:guide-bbox="true"
-     inkscape:zoom="4.2233056"
-     inkscape:cx="208.3798"
-     inkscape:cy="44.34431"
+     inkscape:zoom="2.986328"
+     inkscape:cx="239.28113"
+     inkscape:cy="69.937131"
      inkscape:window-x="-18"
      inkscape:window-y="-18"
      inkscape:window-maximized="1"
@@ -219,8 +219,8 @@
            style="fill:none;stroke:#00a8ec;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path800"
            inkscape:connector-curvature="0" /></g></g><path
-       d="m 130.87662,345.23261 c 64.97327,48.24315 187.66531,58.17553 259.28394,63"
-       style="fill:none;stroke:#000080;stroke-width:0.80000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 130.84692,345.17691 c 64.98817,36.01392 187.70834,43.42852 259.34339,47.03003"
+       style="fill:none;stroke:#000080;stroke-width:0.8;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path886"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" /><g
@@ -291,7 +291,7 @@
        id="path858-5-5-4-7"
        inkscape:connector-curvature="0" /><g
        id="g3700"
-       transform="matrix(0.56,0,0,-0.56,306.3066,483.11282)"><g
+       transform="matrix(0.56,0,0,-0.56,217.65566,454.13078)"><g
          word-spacing="normal"
          letter-spacing="normal"
          font-size-adjust="none"
@@ -337,7 +337,7 @@
            inkscape:connector-curvature="0"
            style="fill:#000000;stroke-width:0" /><polygon
            id="polygon3720"
-           points="596.96,440.78 593.22,440.78 593.22,406.2 596.96,406.2 "
+           points="593.22,440.78 593.22,406.2 596.96,406.2 596.96,440.78 "
            style="fill:#000000;stroke-width:0" /><path
            id="path3722"
            d="m 620.95,420.59 -0.02,0.47 -0.03,0.47 -0.05,0.45 -0.07,0.44 -0.09,0.43 -0.11,0.42 -0.13,0.41 -0.15,0.4 -0.16,0.38 -0.18,0.38 -0.2,0.36 -0.21,0.34 -0.23,0.34 -0.24,0.31 -0.26,0.31 -0.27,0.29 -0.28,0.27 -0.3,0.26 -0.31,0.25 -0.32,0.23 -0.33,0.21 -0.35,0.19 -0.35,0.18 -0.37,0.16 -0.37,0.15 -0.38,0.12 -0.4,0.11 -0.4,0.09 -0.4,0.07 -0.42,0.05 -0.42,0.03 -0.42,0.01 c -3.24,0 -5.49,-0.8 -7.82,-2.14 l 0.3,-3.3 c 2.58,1.84 5.08,2.5 7.52,2.5 2.34,0 4.34,-2 4.34,-5.69 v -2.14 c -7.48,-0.09 -13.81,-2.19 -13.81,-6.58 0,-2.14 1.34,-6.17 5.69,-6.17 0.68,0 5.37,0.1 8.26,2.35 l -1.84,1.64 c -1.44,-0.89 -3.35,-0.96 -3.89,-0.96 -2.39,0 -4.63,1.16 -4.63,3.25 0,3.49 8.06,3.83 10.22,3.94 v -3.09 c 0,-0.96 0,-2.19 -1.7,-3.14 l 1.84,-1.64 v -1.8 h 3.74 z"
@@ -407,9 +407,9 @@
        inkscape:connector-curvature="0"
        d="m 125.89682,369.55302 h -0.7182 l -1.30548,-2.15847 c -0.29845,-0.52759 -0.672,-1.20728 -0.75864,-1.54424 h -0.01 c 0.01,0.0654 0.01,0.13478 0.01,0.24069 0,0.49677 -0.17136,1.45567 -0.27728,1.95628 l -0.32732,1.50574 h -0.75864 l 0.93385,-4.12439 c 0,-0.0212 0.027,-0.10398 0.027,-0.11745 0,-0.0558 -0.43901,-0.73746 -0.51796,-0.85107 -0.27727,-0.4236 -0.42938,-0.58727 -0.67007,-0.58727 -0.16366,0 -0.46981,0.0405 -0.72013,0.15404 l -0.079,-0.62193 c 0.25994,-0.0578 0.51795,-0.079 0.67199,-0.079 0.2792,0 0.67392,0.0386 1.34399,1.12256 z"
        id="path4124" /><polygon
-       transform="matrix(0.19254861,0,0,0.19254861,17.46529,276.00248)"
+       transform="matrix(0.19254861,0,0,0.19254861,22.220293,273.85938)"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;letter-spacing:normal;word-spacing:normal;text-anchor:start;fill:#000000;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10.43299961;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       points="703.05,397.08 708.53,387.72 712.68,387.72 705.15,399.13 716.55,409.84 712.43,409.84 704.05,401.63 698.88,409.84 694.74,409.84 701.86,399.13 689.75,387.72 693.83,387.72 "
+       points="708.53,387.72 712.68,387.72 705.15,399.13 716.55,409.84 712.43,409.84 704.05,401.63 698.88,409.84 694.74,409.84 701.86,399.13 689.75,387.72 693.83,387.72 703.05,397.08 "
        id="polygon4126" /><g
        id="g932"
        transform="translate(0,42.928975)"><path
