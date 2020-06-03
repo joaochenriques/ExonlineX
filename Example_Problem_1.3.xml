@@ -1,0 +1,43 @@
+<problem>
+  
+<script type="loncapa/python"> 
+<![CDATA[
+
+####################################################################
+# importa as funções auxiliares como globais (ver ficheiro do url)
+import requests
+url = 'http://web.ist.utl.pt/~ist30176/edx/edx_utils_01.py'
+exec( requests.get(url).content, globals() )
+####################################################################
+InitRandomGenerator( "Problem 1.3" )
+####################################################################
+
+figure_location = "https://raw.githubusercontent.com/joaochenriques/ExonlineX/master/"
+
+shuffle_lst = ( ( "false", figure_location+"grad_p_caso_1.svg" ),
+                ( "false", figure_location+"grad_p_caso_2.svg" ),
+                ( "false", figure_location+"grad_p_caso_3.svg" ),
+                ( "false", figure_location+"grad_p_caso_4.svg" ),
+                ( "true",  figure_location+"grad_p_caso_5.svg" ) )
+fixed_lst = ( ( "false", "none of the options" ), )
+
+StringMultipleChoice( 'a', shuffle_lst, fixed_lst )
+
+]]>
+</script>
+
+<legend>
+  Select the typical shear stress profile in a separated boundary layer flow:
+</legend>
+<multiplechoiceresponse>
+  <choicegroup type="MultipleChoice">
+    <choice correct="$a_answer_0" ><img src="$a_value_0" width = "160" /></choice>
+    <choice correct="$a_answer_1" ><img src="$a_value_1" width = "160" /></choice>
+    <choice correct="$a_answer_2" ><img src="$a_value_2" width = "160" /></choice>
+    <choice correct="$a_answer_3" ><img src="$a_value_3" width = "160" /></choice>
+    <choice correct="$a_answer_4" ><img src="$a_value_4" width = "160" /></choice>
+    <choice correct="$a_answer_5" > $a_value_5 </choice>
+  </choicegroup>
+</multiplechoiceresponse>  
+
+</problem>
